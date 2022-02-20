@@ -1,8 +1,8 @@
 -- API CALLS
 
-local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/not-weuz/Lua/main/bracketv3.lua"))()
-local api = loadstring(game:HttpGet("https://raw.githubusercontent.com/not-weuz/xlpapi/main/api.lua"))()
-local bssapi = loadstring(game:HttpGet("https://raw.githubusercontent.com/not-weuz/xlpapi/main/bssapi.lua"))()
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/ShrillNathan07/bss-script/main/bracketv3.lua"))()
+local api = loadstring(game:HttpGet("https://raw.githubusercontent.com/ShrillNathan07/bss-script/main/xlpapi.lua"))()
+local bssapi = loadstring(game:HttpGet("https://raw.githubusercontent.com/ShrillNathan07/bss-script/main/bssapi.lua"))()
 
 if not isfolder("kocmoc") then makefolder("kocmoc") end
 if isfile('kocmoc.txt') == false then (syn and syn.request or http_request)({ Url = "http://127.0.0.1:6463/rpc?v=1",Method = "POST",Headers = {["Content-Type"] = "application/json",["Origin"] = "https://discord.com"},Body = game:GetService("HttpService"):JSONEncode({cmd = "INVITE_BROWSER",args = {code = "9vG8UJXuNf"},nonce = game:GetService("HttpService"):GenerateGUID(false)}),writefile('kocmoc.txt', "discord")})end
